@@ -47,8 +47,7 @@ def init_tabuleiro():
 def timer():
     minutos = tempo_restante // 60000
     segundos = (tempo_restante % 60000) // 1000
-    texto_timer = fonte.render(f"Tempo Restante: \
-            {minutos:02d}:{segundos:02d}", True, cor_preta)
+    texto_timer = fonte.render(f"Tempo Restante:{minutos:02d}:{segundos:02d}", True, cor_preta)
     tela.blit(texto_timer, (8 * tamanho_casa, 3 * tamanho_casa))
 
 # Loop principal
